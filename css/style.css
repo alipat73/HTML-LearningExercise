@@ -1,0 +1,57 @@
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: #f6f6f6
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+.wrapper {
+  /* position : relative; */
+  overflow: hidden;
+  min-width: 960px;
+  min-height: 100%;
+}
+
+/* компенсация футера с помощью псевдоэлемента */
+.wrapper:after {
+  content: "";
+  display: block;
+  height: 50px;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.block {
+  background: red;
+  display: inline-block;
+  padding: 20px ;
+  border: 10px solid black;
+  margin: 10px;
+}
+
+
+/* компенсация футера -  пустой блок с */
+/* высотой, равной высоте футера */
+/*.empty {
+/*  height: 50px;
+/*}                                     */
+
+.footer {
+  height: 50px;
+  background: #414141;
+  margin-top: -50px;
+}
