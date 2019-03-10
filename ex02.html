@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Template</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+
+<!-- зависимость от модификатора -->
+<!-- Можно один раз повесить модификатор на родитель -->
+<!-- вместо нескольких на дочерние элементы  -->
+      <div class="ex2">
+        <h3> Для выбора активного класса испльзуются 2 дополнительных класса</h3>
+        <ul class="tabs">
+          <li class="tabs__item">
+            <a href="#" class="tabs__link">Таб 1</a>
+            <div class="tabs__circle"></div>
+          </li>
+          <li class="tabs__item">
+            <a href="#" class="tabs__link">Таб 2</a>
+            <div class="tabs__circle"></div>
+          </li>
+          <li class="tabs__item">
+            <a href="#" class="tabs__link tabs__link--active">Таб 3</a>
+            <div class="tabs__circle tabs__circle--active"></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="ex2">
+        <h3>Для выбора активного используется зависимость от модификатора активного класса</h3>
+        <ul class="tabs">
+          <li class="tabs__item">
+            <a href="#" class="tabs__link">Таб 1</a>
+            <div class="tabs__circle"></div>
+          </li>
+          <li class="tabs__item">
+            <a href="#" class="tabs__link">Таб 2</a>
+            <div class="tabs__circle"></div>
+          </li>
+          <li class="tabs__item tabs__item--active">
+            <a href="#" class="tabs__link ">Таб 3</a>
+            <div class="tabs__circle "></div>
+          </li>
+        </ul>
+      </div>
+      
+      <!--  Выравниние трех элементов в ряд с одинаковым отступом слева-->
+      <div class="wrap">
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+      </div>
+      </div> <!--container -->
+      
+    <!-- компенсация футера способ пустого блока -->
+    <!--<div class="empty"></div> -->
+  </div> <!--wrapper-->
+  <div class="footer">
+
+  </div>
+</body>
+</html>

@@ -16,6 +16,15 @@ ul li {
   list-style: none;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  margin: 0;
+}
+
 .wrapper {
   /* position : relative; */
   overflow: hidden;
@@ -35,12 +44,81 @@ ul li {
   margin: 0 auto;
 }
 
+/* .block { */
+  /* background: red; */
+  /* display: inline-block; */
+  /* padding: 20px ; */
+  /* border: 10px solid black; */
+  /* margin: 10px; */
+/* } */
+
+.ex2{
+  margin-top: 25px;
+  position: relative;
+}
+
+.tabs{
+  margin-top: 25px;
+}
+
+
+.tabs__item {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/**/
+.tabs__item--active .tabs__link {
+  background: yellowgreen;
+  color: white;
+}
+
+.tabs__item--active .tabs__circle {
+  background: red;
+}
+
+.tabs__link {
+  padding: 10px 15px;
+  border: 1px solid black;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+}
+
+.tabs__link--active {
+  background: green;
+  color: white;
+}
+
+.tabs__circle {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: -5px;
+  left: 5px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.tabs__circle--active {
+  background: red;
+}
+
+/*  */
+.wrap {
+  margin-top: 25px;
+  margin-left: -20px;
+  font-size: 0;
+}
+
 .block {
+  /* width: 280px; */
+  width: calc(100% / 3 - 20px);
+  height: 100px;
   background: red;
   display: inline-block;
-  padding: 20px ;
-  border: 10px solid black;
-  margin: 10px;
+  margin-left: 20px;
 }
 
 
